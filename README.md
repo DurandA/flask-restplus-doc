@@ -141,7 +141,7 @@ You can test your *todo* API with:
 | List all todos | GET | /todos/ | curl -X GET --header 'Accept: application/json' 'http://127.0.0.1:5000/todos/' |
 | Create a todo | POST | /todos/ | curl -X POST --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'task=read%20documentation' 'http://127.0.0.1:5000/todos/' |
 | Fetch a todo | GET | /todos/{todo_id} | curl -X GET --header 'Accept: application/json' 'http://127.0.0.1:5000/todos/todo1'
-| Update a todo | PUT | | curl -X PUT --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'task=update%20documentation' 'http://127.0.0.1:5000/todos/todo2'
+| Update a todo | PUT | /todos/{todo_id} | curl -X PUT --header 'Content-Type: application/x-www-form-urlencoded' --header 'Accept: application/json' -d 'task=update%20documentation' 'http://127.0.0.1:5000/todos/todo2'
 | Delete a todo | DELETE | /todos/{todo_id} | curl -X DELETE --header 'Accept: application/json' 'http://127.0.0.1:5000/todos/todo3' |
 
 
