@@ -145,7 +145,6 @@ You can test your *todo* API with:
 | Delete a todo | DELETE | /todos/{todo_id} | curl -X DELETE --header 'Accept: application/json' 'http://127.0.0.1:5000/todos/todo3' |
 
 
-
 The API class from *Flask-RESTPlus* automatically generates API documentation from annotations. You can browse the documentation at [http://localhost:5000/#](http://127.0.0.1:5000/#). The [Swagger](http://swagger.io/) documentation UI is generated from a [swagger.json](http://127.0.0.1:5000/swagger.json) file using javascript.
 
 Note that this is a minimal example. Real applications split their codebase into [modules](https://docs.python.org/3/tutorial/modules.html).
