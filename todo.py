@@ -1,6 +1,6 @@
 from collections import UserDict
 from flask import Flask
-from flask.ext.cors import CORS
+from flask_cors import CORS
 from flask_restplus import Api, Resource, fields
 from werkzeug.contrib.fixers import ProxyFix
 
@@ -72,7 +72,7 @@ class Todo(Resource):
         return task
 
 
-@ns.route('/')
+@ns.route('')
 class TodoList(Resource):
     '''Shows a list of all todos, and lets you POST to add new tasks'''
     @api.marshal_list_with(todo)
